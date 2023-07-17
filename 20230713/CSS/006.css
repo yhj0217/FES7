@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  width: 88px;
+  height: 32px;
+  font-family: Pretendard;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0em;
+  border: 1px solid #1a202c;
+  background-color: #343f50;
+  color: #cbd5df;
+}
+button:enabled {
+  box-shadow: inset 1px 1px 0 0 #4a5568;
+}
+button:disabled {
+  border: 1px solid #343e4e;
+  background-color: #3a4556;
+  color: #4a5568;
+}
+.btn1 {
+  color: rgba(203, 213, 223, 1);
+}
+.btn1:hover {
+  color: white;
+  text-decoration: underline;
+}
+.btn1:enabled:active {
+  box-shadow: inset 1px 1px 0 0 #262f3e;
+}
+.btn3 {
+  color: rgba(67, 154, 255, 1);
+}
+.btn3:hover {
+  color: rgba(254, 254, 254, 1);
+  background-color: #439aff;
+  border: 1px solid #439aff;
+  box-shadow: inset 1px 1px 0 0 #73b4ff;
+  text-decoration: underline;
+}
+.btn3:active {
+  box-shadow: inset 1px 1px 0 0 #3b78be;
+}
+.btn4 {
+  color: rgba(235, 87, 87, 1);
+}
+.btn4:hover {
+  color: rgba(254, 254, 254, 1);
+  background-color: #eb5757;
+  border: 1px solid #eb5757;
+  box-shadow: inset 1px 1px 0 0 #fd6f6f;
+  text-decoration: underline;
+}
+.btn4:active {
+  box-shadow: inset 1px 1px 0 0 #d94242;
+}
