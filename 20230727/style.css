@@ -1,0 +1,11 @@
+article {
+  display: flex;
+  flex-direction: column;
+}
+.question {
+  display: none;
+}
+
+.result {
+  display: none;
+}
