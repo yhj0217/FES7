@@ -1,7 +1,12 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
 body {
   margin: 0;
 }
-h1 {
+h1,
+h2,
+p,
+input {
   margin: 0;
   padding: 0;
 }
@@ -15,6 +20,7 @@ a {
 input,
 button {
   font: inherit;
+  border: none;
 }
 ol,
 li {
@@ -28,49 +34,152 @@ button:enabled {
 
 /* CSS 적용 */
 body {
-  margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+.wrapper {
   width: 520px;
   height: 712px;
   border-radius: 10px;
-  border: 1px solid var(--c-4-c-4-c-4, #c4c4c4);
+  border: 1px solid #c4c4c4;
   background: #fff;
 }
+
 h1 {
   font-size: 16px;
+  font-weight: 500;
   text-align: center;
 }
 header {
+  width: 520px;
   height: 58px;
   border-bottom: 1px solid #c4c4c4;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
-.icon-google {
-  .bg-icon_google {
-    width: 22px;
-    height: 22px;
-    background: url("css_sprites.png") -10px -10px;
-  }
+.header a {
+  position: absolute;
+  top: 22px;
+  right: 24px;
 }
-.icon-facebook {
-  .bg-icon_facebook {
-    width: 13px;
-    height: 24px;
-    background: url("css_sprites.png") -94px -10px;
-  }
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.icon-naver {
-  .bg-icon_naver {
-    width: 22px;
-    height: 22px;
-    background: url("css_sprites.png") -10px -52px;
-  }
+.section1 > p {
+  flex-shrink: 0;
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  padding-top: 26px;
+  padding-left: 24px;
 }
-.icon-kakao {
-  .bg-icon_kakao {
-    width: 22px;
-    height: 22px;
-    background: url("css_sprites.png") -52px -10px;
-  }
+.section1 [type="text"] {
+  display: block;
+  box-sizing: border-box;
+  padding: 15px 0 15px 16px;
+  margin: 0 auto;
+  width: 472px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid var(--c-4-c-4-c-4, #c4c4c4);
+  background: #fff;
+  margin-top: 24px;
+}
+.section1 [type="password"] {
+  display: block;
+  box-sizing: border-box;
+  padding: 15px 0 15px 16px;
+  margin: 0 auto;
+  width: 472px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid var(--c-4-c-4-c-4, #c4c4c4);
+  background: #fff;
+  margin-top: 10px;
+}
+.check {
+  padding-top: 16px;
+  padding-left: 28px;
+}
+.check img {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  padding-bottom: 21px;
+}
+.check p {
+  display: inline-block;
+  color: var(--767676, #767676);
+  font-family: Spoqa Han Sans Neo;
+  font-size: 16px;
+  line-height: normal;
+  padding-left: 8px;
+}
+.section1 button {
+  margin: 0 auto;
+  width: 472px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #2f80ed;
+  color: #fff;
+}
+.group {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.group p {
+  justify-content: center;
+  display: inline-block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #767676;
+}
+.group .join::after {
+  display: inline-block;
+  content: "|";
+  width: 4px;
+  height: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* 또는 */
+.or {
+  display: flex;
+  justify-content: center;
+  padding-top: 39px;
+  padding-bottom: 28px;
+}
+.or p {
+  position: relative;
+  width: 472px;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+.or::after {
+  position: absolute;
+  transform: translateY(-50%);
+  content: "또는";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #767676;
+  background-color: white;
+  padding: 0 13px;
 }
