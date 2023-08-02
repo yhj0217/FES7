@@ -6,7 +6,11 @@ body {
 h1,
 h2,
 p,
-input {
+input,
+div,
+img,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -43,7 +47,7 @@ body {
 }
 .wrapper {
   width: 520px;
-  height: 712px;
+  height: auto;
   border-radius: 10px;
   border: 1px solid #c4c4c4;
   background: #fff;
@@ -91,7 +95,7 @@ header {
   height: 50px;
   flex-shrink: 0;
   border-radius: 5px;
-  border: 1px solid var(--c-4-c-4-c-4, #c4c4c4);
+  border: 2px solid var(--c-4-c-4-c-4, #f4492e);
   background: #fff;
   margin-top: 24px;
 }
@@ -106,10 +110,31 @@ header {
   border-radius: 5px;
   border: 1px solid var(--c-4-c-4-c-4, #c4c4c4);
   background: #fff;
-  margin-top: 10px;
+}
+#pw-input::placeholder {
+  font-weight: 500;
+}
+.section1 .id_err {
+  padding: 0;
+  margin: 6px 0 10px 28px;
+  color: #f4492e;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section1 .pw_err {
+  padding: 0;
+  margin: 10px 0 13px 28px;
+  color: #f4492e;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .check {
-  padding-top: 16px;
+  display: flex;
   padding-left: 28px;
 }
 .check img {
@@ -121,10 +146,11 @@ header {
 .check p {
   display: inline-block;
   color: var(--767676, #767676);
-  font-family: Spoqa Han Sans Neo;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
-  padding-left: 8px;
+  margin-left: 8px;
 }
 .section1 button {
   margin: 0 auto;
@@ -182,4 +208,52 @@ header {
   color: #767676;
   background-color: white;
   padding: 0 13px;
+}
+.section2 {
+  display: flex;
+  justify-content: center;
+}
+.section2 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 472px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid var(--767676, #767676);
+  background: #fff;
+  color: var(--767676, #767676);
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.section2 .google {
+  background-image: url(/images/google.svg);
+  background-repeat: no-repeat;
+  background-position: 12px;
+  border-color: 767676;
+  margin-bottom: 10px;
+}
+.section2 .facebook {
+  background-image: url(/images/facebook.svg);
+  background-repeat: no-repeat;
+  background-position: 12px;
+  border-color: #2d9cdb;
+  margin-bottom: 10px;
+}
+.section2 .naver {
+  background-image: url(/images/naver.svg);
+  background-repeat: no-repeat;
+  background-position: 12px;
+  border-color: #00bf18;
+  margin-bottom: 10px;
+}
+.section2 .kakao {
+  background-image: url(/images/kakao.svg);
+  background-repeat: no-repeat;
+  background-position: 12px;
+  border-color: #f2c94c;
+  margin-bottom: 25px;
 }
