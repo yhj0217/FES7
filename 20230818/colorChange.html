@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box1 {
+        width: 400px;
+        height: 400px;
+        background-color: black;
+      }
+      ul {
+        display: flex;
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 20px;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box1"></div>
+    </div>
+    <ul>
+      <li>
+        <button class="red">빨강</button>
+      </li>
+      <li>
+        <button class="yellow">노랑</button>
+      </li>
+      <li>
+        <button class="green">초록</button>
+      </li>
+    </ul>
+
+    <script>
+      let background = document.querySelector(".box1");
+
+      let red_btn = document.querySelector(".red");
+      let yellow_btn = document.querySelector(".yellow");
+      let green_btn = document.querySelector(".green");
+
+      red_btn.addEventListener("click", function () {
+        background.style.background = "red";
+      });
+      yellow_btn.addEventListener("click", function () {
+        background.style.background = "yellow";
+      });
+      green_btn.addEventListener("click", function () {
+        background.style.background = "green";
+      });
+    </script>
+  </body>
+</html>
