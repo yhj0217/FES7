@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <script>
+      const me = {
+        name: "양희준",
+        address: "경기도 광명시 디지털로63",
+        phoneNum: "010-4734-7055",
+        canWalk: function () {
+          console.log("희준이가 걷는다.");
+        },
+        teached: function (mycode) {
+          myCode.levelUp();
+        },
+      };
+
+      const lion = {
+        level: 1,
+        levelUp: function () {
+          this.level++;
+        },
+      };
+
+      me.teaching(lion);
+
+      const arr = new Array(1, 2, 3);
+      const arr2 = new Array(1, 2, 3);
+
+      function Factory(name) {
+        this.myname = name;
+      }
+
+      this.sayYourName = function () {
+        console.log("제 이름은 " + this.myname + "입니다....!!");
+      };
+      // 생성된 모든 this는 인스턴스를 가리킨다.
+      const robot1_1 = new Factory("희준");
+      const robot1_2 = new Factory("민주");
+    </script>
+  </body>
+</html>
