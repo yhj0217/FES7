@@ -1,0 +1,21 @@
+.box1 {
+  width: 250px;
+  height: 100px;
+  background-color: #343f50;
+  color: white;
+  line-height: 250%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  box-sizing: border-box;
+  border-width: 5px 0 0 5px;
+  border-style: solid;
+  border-color: #4a5568;
+  outline: #000 solid thick;
+  margin-bottom: 50px;
+}
+.box2 {
+  width: 250px;
+  height: 100px;
+  background: linear-gradient(90deg, #854feb, #516de9);
+}

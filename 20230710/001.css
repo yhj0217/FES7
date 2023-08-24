@@ -1,0 +1,36 @@
+.box1 {
+  width: 250px;
+  height: 100px;
+  background-color: #343f50;
+  color: white;
+  line-height: 250%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  box-sizing: border-box;
+  border-width: 5px 0 0 5px;
+  border-style: solid;
+  border-color: #4a5568;
+  outline: #000 solid thick;
+  margin-bottom: 50px;
+}
+.box2 {
+  display: inline-block;
+  padding: 30px 40px;
+  font-size: 35px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #834df6 0%, #336df2 100%);
+  color: white;
+  border-radius: 60px;
+  border: 5px dashed #e6d6ff;
+  background-clip: padding-box;
+}
+.box3 {
+  display: inline-block;
+  padding: 30px 40px;
+  font-size: 35px;
+  font-weight: bold;
+  border-radius: 0 60px 60px 60px;
+  border: 3px solid #ddd;
+  box-shadow: 5px 5px 5px 0 #eee;
+}
