@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+  </head>
+
+  <body>
+    <p>안녕</p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+      //   s("p").hide();
+      //   s("p").show();
+      $(".hello").css("color", "red");
+      $("#header ul li:first-child").css("color", "red");
+
+      // js
+      document.querySelector("#header ul li:first-child").style.color =
+        "royalblue";
+
+      console.log($("p"));
+      console.log(document.querySelectorAll("p"));
+    </script>
+  </body>
+</html>
