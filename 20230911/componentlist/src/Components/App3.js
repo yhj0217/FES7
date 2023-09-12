@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Login from "./Login";
 import Homepage from "./Homepage";
+import Modal from "./Modal";
 
 export default function App3() {
   const user = {
@@ -10,6 +11,16 @@ export default function App3() {
 
   // 로그인 상태를 판단하는 state
   const [login, setLogin] = useState(false);
+  const [modalShow, setModalShow] = useState(true);
 
-  return login ? <Homepage /> : <Login infoUser={user} setLogin={setLogin} />;
+  return (
+    <>
+      {login ? (
+        <Homepage setLogin={setLogin} />
+      ) : (
+        <Login infoUser={user} setLogin={setLogin} />
+      )}
+      {modalShow && <Modal setModalShow={setModalShow} />}
+    </>
+  );
 }
