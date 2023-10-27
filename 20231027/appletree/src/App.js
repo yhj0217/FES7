@@ -1,4 +1,3 @@
-import "./App.css";
 import AppleData from "./data.json";
 import React, { useEffect, useState } from "react";
 import Apple from "./components/Apple";
